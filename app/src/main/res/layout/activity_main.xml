@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:padding="1dp"
+        android:background="@drawable/drawing_background"
+        app:layout_constraintBottom_toTopOf="@+id/layout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+<ImageView
+    android:id="@+id/backImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawing_background"
+    android:scaleType="centerCrop"
+    tools:background="@drawable/img"
+/>
+
+    <kunal.project3.letzzdraw.Draw
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4DFFFFFF"
+        
+        />
+    
+</FrameLayout>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/frame"
+        >
+        <ImageButton
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/img" />
+        <ImageButton
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/img_5" />
+
+        <ImageButton
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/img_1"
+         />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0sp"
+            android:layout_height="50sp"
+            android:layout_weight="1"
+            android:background="@drawable/back"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="10sp"
+            />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/info"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginStart="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/img_3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <ImageButton
+        android:id="@+id/share"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/img_12"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

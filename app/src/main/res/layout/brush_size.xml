@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the BRUSH Size"
+        android:textSize="30dp"
+        android:textColor="#113946"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        />
+    <ImageButton
+        android:id="@+id/small_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/small"
+        android:layout_marginBottom="16dp"
+        />
+    <ImageButton
+        android:id="@+id/medium_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/medium"
+       android:layout_marginBottom="16sp"
+
+        />
+
+    <ImageButton
+        android:id="@+id/large_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/large"
+        android:layout_marginBottom="16sp"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        />
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <SeekBar
+        android:id="@+id/sizeSlide"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:min="0"
+        android:max="100"
+        android:layout_margin="40dp"
+        android:progress="1"
+        /></LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+
+        />
+
+</LinearLayout>
+
+</ScrollView>
